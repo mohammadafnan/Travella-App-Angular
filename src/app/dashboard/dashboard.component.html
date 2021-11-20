@@ -78,10 +78,13 @@
                     <button mat-button>SHARE</button>
                 </mat-card-actions> -->
             </mat-card>
-            <label *ngIf="data.length === 0 " style="color: black;">No Match Found</label>
 
         </mat-grid-tile>
+        <div style="text-align: center;font-weight: bold;">
+        <label *ngIf="data.length === 0 " >No Match Found</label>
+    </div>
     </mat-grid-list>
+
     <div class="container">
     </div>
     <div class="container">
