@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class DashboardComponent implements OnInit {
-   search : any;
+  search: any;
 
   // Placecard: string[] = ['USA', 'Maldive', 'Turkey', 'Baku'];
   Placecard: any[] = [{
