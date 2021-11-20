@@ -11,7 +11,7 @@
 
 <div class="scroll">
 
-    <div class="container"><input type="text" placeholder="Find flight">
+    <div class="container"><input type="text" [(ngModel)]="search" placeholder="Find flight">
     </div>
 
     <!-- <div fxLayout="row wrap ">
@@ -56,7 +56,7 @@
 
     </mat-grid-list>
     <mat-grid-list cols=2 rowHeight="200" gutterSize="10">
-        <mat-grid-tile *ngFor="let i of Placecard">
+        <mat-grid-tile *ngFor="let i of Placecard | filter:search">
             <mat-card class="mat-elevation-z4">
 
                 <!-- <span> -->

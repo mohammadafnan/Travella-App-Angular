@@ -5,9 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent implements OnInit {
-  // Placecard: string[] = ['USA', 'Maldive', 'Turkey', 'Baku'];
 
+
+export class DashboardComponent implements OnInit {
+   search : any;
+
+  // Placecard: string[] = ['USA', 'Maldive', 'Turkey', 'Baku'];
   Placecard: any[] = [{
     name: "Arena beach Maldive", url: './../../assets/images/maldive.png',
 
