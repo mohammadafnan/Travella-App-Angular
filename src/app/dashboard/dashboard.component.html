@@ -4,14 +4,16 @@
         <span class="example-spacer"></span>
 
         <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"> -->
-        <span class="material-icons text-white">account_circle</span>
+        <span class="material-icons usericon">account_circle</span>
         <!-- </button> -->
+
     </mat-toolbar>
+
 </header>
 
 <div class="scroll">
 
-    <div class="container  "><input type="text" [(ngModel)]="search" placeholder="Find flight">
+    <div class="container  "><input type="text" [(ngModel)]="search" placeholder="Search places">
     </div>
 
     <!-- <div fxLayout="row wrap ">
@@ -47,7 +49,7 @@
     </mat-grid-list>
     <hr align="center" width="50%">
     <mat-grid-list cols=3 rowHeight="100" gutterSize="10">
-        <mat-grid-tile class="heading1">Get inspired<br>
+        <mat-grid-tile class="heading1">Get inspired<br> Discover your next Adventure
         </mat-grid-tile>
         <mat-grid-tile>
         </mat-grid-tile>
@@ -79,7 +81,7 @@
             </mat-card>
 
         </mat-grid-tile>
-        <div style="text-align: center;font-weight: bold;">
+        <div [ngClass]="{ nodata: data.length == 0 }">
             <label *ngIf="data.length === 0 ">No Match Found</label>
         </div>
     </mat-grid-list>
