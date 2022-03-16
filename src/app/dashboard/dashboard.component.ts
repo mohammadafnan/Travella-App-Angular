@@ -24,6 +24,22 @@ export class DashboardComponent implements OnInit {
   }, {
     name: "Berlin Germany", url: './../../assets/images/Germany.png',
 
+  },
+  {
+    name: " Italy", url: './../../assets/images/Germany.png',
+
+  },
+  {
+    name: "Greece", url: './../../assets/images/Germany.png',
+
+  },
+  {
+    name: "Dubai", url: './../../assets/images/Germany.png',
+
+  },
+  {
+    name: "Spain", url: './../../assets/images/Germany.png',
+
   },]
   // }, {
   //   name: "Berlin Germany", url: './../../assets/images/Germany.png',

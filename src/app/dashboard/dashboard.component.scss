@@ -3,7 +3,7 @@
 }
 
 mat-toolbar {
-    background-color: rgb(252, 252, 252);
+    background-color: #00A5FF;
     height          : 50px;
 
 }
@@ -158,4 +158,8 @@ img {
 
 hr{
     color: black;
+}
+.text-white{
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
 }
