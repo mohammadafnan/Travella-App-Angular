@@ -59,7 +59,7 @@
     </mat-grid-list>
     <mat-grid-list cols=2 rowHeight="200" gutterSize="10" *ngIf="( Placecard | filter:search ) as data">
         <mat-grid-tile *ngFor="let i of data ">
-            <mat-card class="mat-elevation-z4">
+            <mat-card class="mat-elevation-z4" (click)="Gotoflight()">
 
                 <!-- <span> -->
                 <img mat-card-image src="{{ i.url }}" height="90%">
@@ -93,7 +93,7 @@
     <footer>
         <mat-toolbar class="toolbarNav">
             <button mat-flat-button routerLink="/top-artists" routerLinkActive="active-link">
-                <span class="material-icons color_blue">
+                <span class="material-icons color_blue" (click)="Gotoflight()">
                     airplanemode_active</span>
                 <span>Flights</span>
             </button>
