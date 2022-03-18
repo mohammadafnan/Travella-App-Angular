@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 
 export class DashboardComponent implements OnInit {
   search: any;
-
+  show: boolean = true
   // Placecard: string[] = ['USA', 'Maldive', 'Turkey', 'Baku'];
   Placecard: any[] = [{
     name: "Arena beach Maldive", url: './../../assets/images/maldive.png',
@@ -62,11 +62,15 @@ export class DashboardComponent implements OnInit {
   constructor(private router: Router) { }
   ngOnInit(): void {
   }
-  Gotoflight(){
+  Gotoflight() {
     this.router.navigate(['/flight']);
     console.log("flight route working")
-  
+
     // alert("clicked me!");
-  
+
   }
+
+  // detect(){
+
+  // }
 }

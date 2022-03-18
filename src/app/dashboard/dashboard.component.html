@@ -57,6 +57,10 @@
         </mat-grid-tile>
 
     </mat-grid-list>
+    <div style="display: flex;justify-content: center;">
+        <div class="loader" *ngIf="!show "></div>
+    </div>
+
     <mat-grid-list cols=2 rowHeight="200" gutterSize="10" *ngIf="( Placecard | filter:search ) as data">
         <mat-grid-tile *ngFor="let i of data ">
             <mat-card class="mat-elevation-z4" (click)="Gotoflight()">
