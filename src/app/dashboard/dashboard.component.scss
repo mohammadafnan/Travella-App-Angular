@@ -129,8 +129,11 @@ mat-card {
 
 img {
     border-bottom-left-radius: 20px;
+   
 }
-
+.img {
+    margin-left: 70px;
+}
 .bottom-left {
     position      : absolute;
     bottom        : 150px;
@@ -141,6 +144,7 @@ img {
     font-weight   : 500;
     font-size     : 20px !important;
     letter-spacing: 2px !important;
+    top: -120px
 
 }
 
@@ -182,6 +186,7 @@ img {
 
 hr{
     color: black;
+    width: 100%;
 }
 .text-white{
     color: rgb(0, 0, 0);

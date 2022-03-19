@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class FlightComponent implements OnInit {
 
   loc1: string = "karachi"
-  loc2: string = "Malvedive"
+  loc2: string = "Maledive"
 
   constructor(private router: Router) { }
 

@@ -55,10 +55,24 @@ mat-toolbar {
 .p1 {
     margin-top: 0;
     transform: translate(-50px, 20px);
+    color: white;
+    font-weight: 500;
 }
 
 .p2 {
     margin-top: 0;
     transform: translate(-70px, 20px);
-    // text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+hr {
+    margin: 1rem 0;
+    color: white !important ;
+    background-color: currentColor;
+    border: 0;
+height: 3px;
+    transform: translate(-34px, -22px);
+    opacity: 10;
+    border-radius: 20px;
 }
