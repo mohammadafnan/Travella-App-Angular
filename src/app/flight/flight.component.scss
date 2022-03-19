@@ -18,11 +18,15 @@
     letter-spacing: 1px;
     font-size: 34px;
     cursor: pointer;
+    padding-bottom: 75px;
 }
 
 mat-toolbar {
-    background-color: #00A5FF;
-    height          : 70px;
+    background-color: #4285F4;
+    height          : 150px;
     border-bottom-left-radius: 30px;
 
+}
+p{
+    padding-bottom: 75px; 
 }
