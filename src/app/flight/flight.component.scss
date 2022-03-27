@@ -151,9 +151,14 @@ body {
   padding: 16px;
   background-color: white;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 16px;
   display: flex;
+  box-shadow: black;
+  border: 2px solid white;
+  padding-top: 37px;
+  box-shadow: rgba(38, 0, 255, 0.247) 0px 2px 8px 0px;
+}
 
   .bold {
     font-weight: 700;
@@ -282,7 +287,7 @@ body {
     border-radius: 3px;
     border: none;
   }
-}
+
 
 
 
