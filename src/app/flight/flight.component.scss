@@ -148,7 +148,7 @@ body {
 }
 
 .flight-card-test  {
-  padding: 16px;
+  // padding: 16px;
   background-color: white;
   border-radius: 3px;
   background-color: #ffffff;
@@ -185,6 +185,7 @@ body {
   
   .flight-info {
     display: flex;
+    transform: translate(4px, -8px)
   }
 
   .outbound-flight, .inbound-flight {
@@ -194,7 +195,7 @@ body {
   }
   
   .outbound-flight {
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
   }
   
   .inbound-flight {
