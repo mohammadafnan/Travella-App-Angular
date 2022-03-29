@@ -1,100 +1,101 @@
-<header>
-    <mat-toolbar class="position-fixed ">
-        <span class="material-icons usericon " (click)="backtodashboard()">arrow_back_ios</span>
+<div >
+    <header style=" overflow-x: hidden !important;">
+        <mat-toolbar class="position-fixed ">
+            <span class="material-icons usericon " (click)="backtodashboard()">arrow_back_ios</span>
 
-        <span class="example-spacer"></span>
+            <span class="example-spacer"></span>
 
-        <span class="material-icons usericon">account_circle</span>
-
-
-
-
-    </mat-toolbar>
-
-    <mat-toolbar class=" toolbar  " style="padding-top: 120px;padding-bottom: 50px;">
-        <span class="material-icons usericon1 ">flight_takeoff</span><br><br>
-        <p class="p1">{{loc1}}</p>
-
-        <span class="example-spacer">
-            <hr>
-        </span>
-
-        <span class="material-icons usericon2">flight_land</span><br><br>
-        <p class="p2">{{loc2}}</p>
+            <span class="material-icons usericon">account_circle</span>
 
 
 
 
-    </mat-toolbar>
+        </mat-toolbar>
 
-</header>
+        <mat-toolbar class=" toolbar  " style="padding-top: 120px;padding-bottom: 50px;">
+            <span class="material-icons usericon1 ">flight_takeoff</span><br><br>
+            <p class="p1">{{loc1}}</p>
 
-<mat-grid-list cols=1 rowHeight="150" gutterSize="0">
-    <mat-grid-tile>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <div class="flight-card-test">
-            <div class="flight-info">
-                <div class="outbound-flight">
-                    <div class="flight-airport flight-info flight-airport-outbound">
-                        <p class="flight-info-upper">
-                            <!-- <span class="bold">LGW</span> -->
-                            18:30
-                        </p>
-                        <!-- <p>London Gatwick</p> -->
-                    </div>
+            <span class="example-spacer">
+                <hr>
+            </span>
 
-                    <div class="flight-travel flight-info">
-                        <p class="flight-info-upper">2h00</p>
+            <span class="material-icons usericon2">flight_land</span><br><br>
+            <p class="p2">{{loc2}}</p>
 
-                        <div class="stop-wrapper"><span class="stop-item">1</span></div>
 
-                        <svg class="icon-way" viewBox="0 0 341 32">
-                            <path fill="#ff8c00" style="fill: var(--color1, #0004ff)"
-                                d="M325.333 0c-7.872 0-14.384 5.696-15.717 13.189h-277.899c-1.333-7.493-7.845-13.189-15.717-13.189-8.837 0-16 7.163-16 16s7.163 16 16 16c7.872 0 14.384-5.696 15.717-13.189h277.899c1.333 7.493 7.845 13.189 15.717 13.189 8.837 0 16-7.163 16-16s-7.163-16-16-16z">
-                            </path>
-                        </svg>
 
-                        <p>Stop</p>
-                        <span
-                            style="font-size: 18px;font-weight: bold;color: black;width: max-content;transform: translate(-50px, 10px)">Rs-125000
-                            <label style="color: rgb(173, 173, 173);font-weight: 400;">Round Trip</label></span>
-                        <!-- <span style="font-size: 12px;">Round Trip</span><br> -->
 
-                    </div>
+        </mat-toolbar>
 
-                    <div class="flight-airport flight-info flight-airport-inbound">
-                        <p class="flight-airport-upper">
-                            21:00
-                            <!-- <span class="bold">AGP</span> -->
-                        </p>
-                        <!-- <p>Malaga</p> -->
-                    </div>
+    </header>
 
-                    <div class="flight-airline flight-info">
-                        <p class="flight-airline-upper">
+    <mat-grid-list cols=1 rowHeight="140" gutterSize="0" >
+        <mat-grid-tile>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="flight-card-test">
+                <div class="flight-info">
+                    <div class="outbound-flight">
+                        <div class="flight-airport flight-info flight-airport-outbound">
+                            <p class="flight-info-upper">
+                                <!-- <span class="bold">LGW</span> -->
+                                18:30
+                            </p>
+                            <!-- <p>London Gatwick</p> -->
+                        </div>
 
-                            <!-- <span class="airline-logo"></span> 
+                        <div class="flight-travel flight-info">
+                            <p class="flight-info-upper">2h00</p>
+
+                            <div class="stop-wrapper"><span class="stop-item">1</span></div>
+
+                            <svg class="icon-way" viewBox="0 0 341 32">
+                                <path fill="#ff8c00" style="fill: var(--color1, #0004ff)"
+                                    d="M325.333 0c-7.872 0-14.384 5.696-15.717 13.189h-277.899c-1.333-7.493-7.845-13.189-15.717-13.189-8.837 0-16 7.163-16 16s7.163 16 16 16c7.872 0 14.384-5.696 15.717-13.189h277.899c1.333 7.493 7.845 13.189 15.717 13.189 8.837 0 16-7.163 16-16s-7.163-16-16-16z">
+                                </path>
+                            </svg>
+
+                            <p>Stop</p>
+                            <span
+                                style="font-size: 18px;font-weight: bold;color: black;width: max-content;transform: translate(-50px, 10px)">Rs-125000
+                                <label style="color: rgb(173, 173, 173);font-weight: 400;">Round Trip</label></span>
+                            <!-- <span style="font-size: 12px;">Round Trip</span><br> -->
+
+                        </div>
+
+                        <div class="flight-airport flight-info flight-airport-inbound">
+                            <p class="flight-airport-upper">
+                                21:00
+                                <!-- <span class="bold">AGP</span> -->
+                            </p>
+                            <!-- <p>Malaga</p> -->
+                        </div>
+
+                        <div class="flight-airline flight-info">
+                            <p class="flight-airline-upper">
+
+                                <!-- <span class="airline-logo"></span> 
                             <span class="">Easyjet</span> -->
-                            <img style="transform: translate(-3px, -2px);"
-                                src="https://img.icons8.com/color/48/000000/fedex-airlines.png" />
-                        </p>
-                        <p style="transform: translate(-1px, -12px);">
-                            <svg class="check-icon-bags" viewBox="0 0 38 32">
-                                <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
-                                    stroke-linecap="square" stroke-linejoin="miter"
-                                    style="stroke: var(--color1, #1ca381)" d="M6.4 17.681l7.476 7.919 18.124-19.2">
-                                </path>
-                            </svg>
-                            <span class="">Cabin bag included</span><br>
-                            <svg class="check-icon-bags" viewBox="0 0 38 32">
-                                <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
-                                    stroke-linecap="square" stroke-linejoin="miter"
-                                    style="stroke: var(--color1, #1ca381)" d="M6.4 17.681l7.476 7.919 18.124-19.2">
-                                </path>
-                            </svg>
-                            <span class="">Business Class</span><br>
-                            <!-- <svg class="check-icon-bags" viewBox="0 0 38 32">
+                                <img style="transform: translate(-3px, -2px);"
+                                    src="https://img.icons8.com/color/48/000000/fedex-airlines.png" />
+                            </p>
+                            <p style="transform: translate(-1px, -12px);">
+                                <svg class="check-icon-bags" viewBox="0 0 38 32">
+                                    <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
+                                        stroke-linecap="square" stroke-linejoin="miter"
+                                        style="stroke: var(--color1, #1ca381)" d="M6.4 17.681l7.476 7.919 18.124-19.2">
+                                    </path>
+                                </svg>
+                                <span class="">Cabin bag included</span><br>
+                                <svg class="check-icon-bags" viewBox="0 0 38 32">
+                                    <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
+                                        stroke-linecap="square" stroke-linejoin="miter"
+                                        style="stroke: var(--color1, #1ca381)" d="M6.4 17.681l7.476 7.919 18.124-19.2">
+                                    </path>
+                                </svg>
+                                <span class="">Business Class</span><br>
+                                <!-- <svg class="check-icon-bags" viewBox="0 0 38 32">
                                 <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
                                     stroke-linecap="square" stroke-linejoin="miter"
                                     style="stroke: var(--color1, #1ca381)" d="M6.4 17.681l7.476 7.919 18.124-19.2">
@@ -102,22 +103,22 @@
                             </svg>
                             <span class="">Business Class</span>  -->
 
-                        </p>
+                            </p>
+                        </div>
                     </div>
+
                 </div>
 
+
+
+
+
             </div>
+        </mat-grid-tile>
+        <mat-grid-tile></mat-grid-tile>
 
-
-
-
-
-        </div>
-    </mat-grid-tile>
-    <mat-grid-tile></mat-grid-tile>
-
-</mat-grid-list>
-
+    </mat-grid-list>
+</div>
 <!-- <div class="flight-price flight-info">
     <p class="price-label">Return flight<br/>
       <span class="price-label-grey">Per person</span>
