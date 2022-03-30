@@ -147,9 +147,21 @@ body {
       display: block;
       position: absolute;
       overflow: hidden;
-      transform: translate(1px, 50px) !important;
+      // transform: translate(1px, 50px) !important;
       z-index: -99;
   }
+
+.fly{
+  border: 0;
+  width: 80px;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #4285F4;
+  color: whitesmoke;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
 
      
 ////flights cards//
@@ -159,16 +171,17 @@ body {
 }
 
 .flight-card-test  {
-  // padding: 16px;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 20px;
   background-color: #ffffff;
   font-size: 16px;
   display: flex;
   box-shadow: black;
   border: 2px solid white;
   padding-top: 37px;
-  box-shadow: rgba(38, 0, 255, 0.247) 0px 2px 8px 0px;
+  box-shadow: rgb(38 0 255 / 25%) 0px 2px 8px 0px;
+  height: 165px;
+  width: 92%;
 }
 
   .bold {
@@ -196,7 +209,7 @@ body {
   
   .flight-info {
     display: flex;
-    transform: translate(4px, -8px)
+    transform: translate(12px, -8px)
   }
 
   .outbound-flight, .inbound-flight {

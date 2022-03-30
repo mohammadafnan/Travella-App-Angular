@@ -29,7 +29,7 @@
 
 </header>
 
-<mat-grid-list cols=1 rowHeight="160" gutterSize="0">
+<mat-grid-list cols=1 rowHeight="200" gutterSize="0">
     <mat-grid-tile>
     </mat-grid-tile>
     <mat-grid-tile *ngFor="let f of flightData; let i = index">
@@ -80,13 +80,13 @@
                             <img style="transform: translate(-3px, -2px);" src="{{ f.airline }}" />
                         </p>
                         <p style="transform: translate(-1px, -12px);">
-                            <svg class="check-icon-bags" viewBox="0 0 38 32">
+                            <!-- <svg class="check-icon-bags" viewBox="0 0 38 32">
                                 <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
                                     stroke-linecap="square" stroke-linejoin="miter"
                                     style="stroke: var(--color1, #1ca381)" d="M6.4 17.681l7.476 7.919 18.124-19.2">
                                 </path>
                             </svg>
-                            <span class="">{{f.airlineName}}</span><br>
+                            <span class="">{{f.airlineName}}</span><br> -->
                             <svg class="check-icon-bags" viewBox="0 0 38 32">
                                 <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
                                     stroke-linecap="square" stroke-linejoin="miter"
@@ -101,7 +101,7 @@
                                 </path>
                             </svg>
                             <span class="">{{f.flightClass}}</span><br>
-
+                            <button class="fly">Fly</button>
                             <!-- <svg class="check-icon-bags" viewBox="0 0 38 32">
                                 <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
                                     stroke-linecap="square" stroke-linejoin="miter"
