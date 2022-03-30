@@ -1,4 +1,4 @@
-<div >
+<div>
     <header style=" overflow-x: hidden !important;">
         <mat-toolbar class="position-fixed ">
             <span class="material-icons usericon " (click)="backtodashboard()">arrow_back_ios</span>
@@ -30,25 +30,25 @@
 
     </header>
 
-    <mat-grid-list cols=1 rowHeight="140" gutterSize="0" >
+    <mat-grid-list cols=1 rowHeight="140" gutterSize="0">
         <mat-grid-tile>
         </mat-grid-tile>
-        <mat-grid-tile>
+        <mat-grid-tile *ngFor="let f of flightData; let i = index">
             <div class="flight-card-test">
                 <div class="flight-info">
                     <div class="outbound-flight">
                         <div class="flight-airport flight-info flight-airport-outbound">
                             <p class="flight-info-upper">
                                 <!-- <span class="bold">LGW</span> -->
-                                18:30
+                                {{f.timeForm}}
                             </p>
                             <!-- <p>London Gatwick</p> -->
                         </div>
 
                         <div class="flight-travel flight-info">
-                            <p class="flight-info-upper">2h00</p>
+                            <p class="flight-info-upper">{{f.totalHour}}</p>
 
-                            <div class="stop-wrapper"><span class="stop-item">1</span></div>
+                            <div class="stop-wrapper"><span class="stop-item">{{f.totalStop}}</span></div>
 
                             <svg class="icon-way" viewBox="0 0 341 32">
                                 <path fill="#ff8c00" style="fill: var(--color1, #0004ff)"
@@ -58,15 +58,16 @@
 
                             <p>Stop</p>
                             <span
-                                style="font-size: 18px;font-weight: bold;color: black;width: max-content;transform: translate(-50px, 10px)">Rs-125000
-                                <label style="color: rgb(173, 173, 173);font-weight: 400;">Round Trip</label></span>
+                                style="font-size: 18px;font-weight: bold;color: black;width: max-content;transform: translate(-50px, 10px)">{{f.price}}
+                                <label
+                                    style="color: rgb(173, 173, 173);font-weight: 400;font-size: 13px;">{{f.trip}}</label></span>
                             <!-- <span style="font-size: 12px;">Round Trip</span><br> -->
 
                         </div>
 
                         <div class="flight-airport flight-info flight-airport-inbound">
                             <p class="flight-airport-upper">
-                                21:00
+                                {{f.timeTo}}
                                 <!-- <span class="bold">AGP</span> -->
                             </p>
                             <!-- <p>Malaga</p> -->

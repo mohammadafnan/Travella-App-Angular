@@ -13,13 +13,48 @@ export class FlightComponent implements OnInit {
 
   constructor(private router: Router) { }
 
+  flightData = [
+    {
+      timeForm: "6:30",
+      timeTo: "9:00",
+      totalHour: "1h",
+      totalStop: "2",
+      price: "RS- 1,25000",
+      trip: "Round Trip",
+      airline: "https://img.icons8.com/color/48/000000/fedex-airlines.png",
+      tripBag: "Cabin bag included ",
+      flightClass: "Business Class",
+    },
+    {
+      timeForm: "6:30",
+      timeTo: "9:00",
+      totalHour: "2h",
+      totalStop: "2",
+      price: "RS- 1,15000",
+      trip: "Round Trip",
+      airline: "https://img.icons8.com/color/48/000000/fedex-airlines.png",
+      tripBag: "Cabin bag included ",
+      flightClass: "Business Class",
+    }, {
+      timeForm: "6:30",
+      timeTo: "9:00",
+      totalHour: "3h",
+      totalStop: "2",
+      price: "RS- 95000",
+      trip: "Round Trip",
+      airline: "https://img.icons8.com/color/48/000000/fedex-airlines.png",
+      tripBag: "Cabin bag included ",
+      flightClass: "Business Class",
+    }
+  ]
+
   ngOnInit(): void {
   }
-  backtodashboard(){
+  backtodashboard() {
     this.router.navigate(['/Dashboard']);
     // console.log("flight route working")
-  
+
     // alert("clicked me!");
-  
+
   }
 }
