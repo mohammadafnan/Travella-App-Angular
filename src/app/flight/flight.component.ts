@@ -15,8 +15,8 @@ export class FlightComponent implements OnInit {
 
   flightData = [
     {
-      timeForm: "6:30",
-      timeTo: "9:00",
+      timeForm: "6:30 PM",
+      timeTo: "9:00 AM",
       totalHour: "1h",
       totalStop: "2",
       price: "RS- 1,25000",
@@ -26,8 +26,8 @@ export class FlightComponent implements OnInit {
       flightClass: "Business Class",
     },
     {
-      timeForm: "6:30",
-      timeTo: "9:00",
+      timeForm: "6:30 AM",
+      timeTo: "9:00 PM",
       totalHour: "2h",
       totalStop: "2",
       price: "RS- 1,15000",
@@ -36,8 +36,8 @@ export class FlightComponent implements OnInit {
       tripBag: "Cabin bag included ",
       flightClass: "Business Class",
     }, {
-      timeForm: "6:30",
-      timeTo: "9:00",
+      timeForm: "6:30 PM",
+      timeTo: "9:00 PM",
       totalHour: "3h",
       totalStop: "2",
       price: "RS- 95000",
