@@ -16,6 +16,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { FlightComponent } from './flight/flight.component';
+import { FlightdetailComponent } from './flightdetail/flightdetail.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FlightComponent } from './flight/flight.component';
     LoginpageComponent,
     DashboardComponent,
     FlightComponent,
+    FlightdetailComponent,
     // MatToolbarModule,
 
   ],

@@ -56,6 +56,14 @@ export class FlightComponent implements OnInit {
   backtodashboard() {
     this.router.navigate(['/Dashboard']);
     // console.log("flight route working")
+    // alert("flightdetail route working")
+
+    // alert("clicked me!");
+
+  }
+  Gotoflightdetail() {
+    this.router.navigate(['/flightdetail']);
+    alert("flightdetail route working")
 
     // alert("clicked me!");
 

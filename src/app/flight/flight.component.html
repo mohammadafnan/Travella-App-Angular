@@ -101,7 +101,7 @@
                                 </path>
                             </svg>
                             <span class="">{{f.flightClass}}</span><br>
-                            <button class="fly">Fly</button>
+                            <button class="fly" (click)="Gotoflightdetail()">Fly</button>
                             <!-- <svg class="check-icon-bags" viewBox="0 0 38 32">
                                 <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
                                     stroke-linecap="square" stroke-linejoin="miter"
@@ -122,11 +122,19 @@
 
         </div>
     </mat-grid-tile>
+
     <mat-grid-tile></mat-grid-tile>
 
 </mat-grid-list>
+<!-- <button class="fly" (click)="Gotoflightdetail()">Fly</button> -->
 
-<!-- <div class="flight-price flight-info">
+<div>
+    <!-- <button class="fly" (click)="Gotoflightdetail()">Fly</button> -->
+
+    <!-- <div style="float: left;">left</div>
+    <div style="float: right;">right</div>
+</div> -->
+    <!-- <div class="flight-price flight-info">
     <p class="price-label">Return flight<br/>
       <span class="price-label-grey">Per person</span>
     </p>
@@ -135,7 +143,7 @@
     <button class="select-flight-button">Select</button>
   </div> -->
 
-<!-- 
+    <!-- 
                 <div class="inbound-flight">
                     <div class="flight-airport flight-info flight-airport-outbound">
                         <p class="flight-info-upper">
