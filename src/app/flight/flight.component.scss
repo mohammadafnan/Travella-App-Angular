@@ -1,166 +1,187 @@
 .position-fixed {
-    position: fixed;
-    z-index : 1;
+  position: fixed;
+  z-index: 99;
 }
 
 .example-spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 
-.text-white{
-    color: rgb(0, 0, 0);
-    letter-spacing: 1px;
-    font-size: 24px;
-}
-.usericon{
-    color: rgb(0, 0, 0);
-    letter-spacing: 1px;
-    font-size: 34px;
-    cursor: pointer;
-    padding-bottom: 10px;
+.text-white {
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-size: 24px;
 }
 
-.usericon1{
-    color: rgb(255, 255, 255);
-    letter-spacing: 1px;
-    font-size: 34px;
-    cursor: pointer;
-    padding-bottom: 60px;
-    padding-left: 80px;
+.usericon {
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-size: 34px;
+  cursor: pointer;
+  padding-bottom: 10px;
 }
-.usericon2{
-    color: rgb(255, 255, 255);
-    letter-spacing: 1px;
-    font-size: 34px;
-    cursor: pointer;
-    padding-bottom: 60px;
-    padding-right: 10px;
+
+.usericon1 {
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-size: 34px;
+  cursor: pointer;
+  padding-bottom: 60px;
+  padding-left: 80px;
+}
+
+.usericon2 {
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-size: 34px;
+  cursor: pointer;
+  padding-bottom: 60px;
+  padding-right: 10px;
 
 }
 
 mat-toolbar {
-    background-color: #4285F4;
-    height          : 70px;
-    // border-bottom-left-radius: 30px;
+  background-color: #4285F4;
+  height: 70px;
+  // border-bottom-left-radius: 30px;
 
 }
 
 .toolbar {
-    // background-color: #4285F4;
-    height          : 100px;
-    border-bottom-left-radius: 30px;
-    // border-bottom-right-radius: 30px;
+  // background-color: #4285F4;
+  height: 100px;
+  border-bottom-left-radius: 30px;
+  // border-bottom-right-radius: 30px;
 
   position: fixed !important;
- 
-  
+z-index: 9;
+
 }
+
 .p1 {
-    margin-top: 0;
-    transform: translate(-50px, 20px);
-    color: white;
-    font-weight: 500;
+  margin-top: 0;
+  transform: translate(-50px, 20px);
+  color: white;
+  font-weight: 500;
 }
 
 .p2 {
-    margin-top: 0;
-    transform: translate(-70px, 20px);
-    color: white;
-    font-weight: 500;
+  margin-top: 0;
+  transform: translate(-70px, 20px);
+  color: white;
+  font-weight: 500;
 }
 
 hr {
-    margin: 1rem 0;
-    color: white !important ;
-    background-color: currentColor;
-    border: 0;
-height: 3px;
-    transform: translate(-34px, -22px);
-    opacity: 10;
-    border-radius: 20px;
+  margin: 1rem 0;
+  color: white !important;
+  background-color: currentColor;
+  border: 0;
+  height: 3px;
+  transform: translate(-34px, -22px);
+  opacity: 10;
+  border-radius: 20px;
 }
 
 
 
 body {
-    background: skyblue;
- }
- .light {
-   width: 10px;
-   height: 10px;
-   background: red;
-   border-radius: 50%;
-      bottom: 295px;
-   position: absolute;
-   z-index: 10;
-   left: 20px;
-   animation: light 800ms ease-in-out 0s infinite alternate;
- }
- .cloud {
-   position: absolute;
-   top: 0px;
-   right: -500px;
-   opacity: .8;
-    animation: cloud 10s linear 0s infinite reverse;
-   z-index: 99;
- }
- @keyframes light {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
- }
- @keyframes cloud {
-   from {right:-500px;}
-   to {right: 102%;}
- }
+  background: skyblue;
+}
 
+.light {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  bottom: 295px;
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  animation: light 800ms ease-in-out 0s infinite alternate;
+}
 
+.cloud {
+  position: absolute;
+  top: 0px;
+  right: -500px;
+  opacity: .8;
+  animation: cloud 10s linear 0s infinite reverse;
+  z-index: 99;
+}
 
- /////////////
-
- .bgimg{
-    /* background-image: url(assets/img/sidebar-image2.jpg); */
-    animation: SidebarBackgroundImage 13s infinite;
-    // height: 10%;
-    overflow: hidden !important;
-    // background-attachment: fixed;  
-    // background-size: cover;
-    // background-repeat: no-repeat;
-   
-    background-size: 100% ;
-    // height: 10%;
-
-   }
-   
-   
-   @keyframes SidebarBackgroundImage {
-       0% {
-         background-image: url('./../../assets/images/maldive.png');
-       }
-       25% {
-         background-image: url('./../../assets/images/turkey.png');
-       }
-       50% {
-         background-image: url('./../../assets/images/baku.png');
-       }
-       75% {
-         background-image: url('./../../assets/images/germany.png');
-       }
-       100% {
-         background-image: url('./../../assets/images/maldive.png');
-       }
-     }
-
-
-     .mat-grid-tile {
-      display: block;
-      position: absolute;
-      overflow: hidden;
-      // transform: translate(1px, 50px) !important;
-      z-index: -99;
+@keyframes light {
+  0% {
+    opacity: 0;
   }
 
-.fly{
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cloud {
+  from {
+    right: -500px;
+  }
+
+  to {
+    right: 102%;
+  }
+}
+
+
+
+/////////////
+
+.bgimg {
+  /* background-image: url(assets/img/sidebar-image2.jpg); */
+  animation: SidebarBackgroundImage 13s infinite;
+  // height: 10%;
+  overflow: hidden !important;
+  // background-attachment: fixed;  
+  // background-size: cover;
+  // background-repeat: no-repeat;
+
+  background-size: 100%;
+  // height: 10%;
+
+}
+
+
+@keyframes SidebarBackgroundImage {
+  0% {
+    background-image: url('./../../assets/images/maldive.png');
+  }
+
+  25% {
+    background-image: url('./../../assets/images/turkey.png');
+  }
+
+  50% {
+    background-image: url('./../../assets/images/baku.png');
+  }
+
+  75% {
+    background-image: url('./../../assets/images/germany.png');
+  }
+
+  100% {
+    background-image: url('./../../assets/images/maldive.png');
+  }
+}
+
+
+.mat-grid-tile {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  // transform: translate(1px, 50px) !important;
+  // z-index: -9;
+}
+
+.fly {
   border: 0;
   width: 80px;
   height: 40px;
@@ -169,19 +190,21 @@ body {
   color: whitesmoke;
   border-radius: 20px;
   font-size: 14px;
+  cursor: pointer !important;
+  // z-index: 999999999 !important;
   // float: right !important;
   // margin: auto;
 }
 
 
-     
+
 ////flights cards//
 body {
   background-color: #ececec;
   font-family: 'open-sans', sans-serif;
 }
 
-.flight-card-test  {
+.flight-card-test {
   background-color: white;
   border-radius: 20px;
   background-color: #ffffff;
@@ -195,141 +218,138 @@ body {
   width: 92%;
 }
 
-  .bold {
-    font-weight: 700;
-  }
+.bold {
+  font-weight: 700;
+}
 
-  p {
-    margin: 0;
-  }
+p {
+  margin: 0;
+}
 
-  .flight-info {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #666666;
-  }
+.flight-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666666;
+}
 
-  .flight-info-upper,.flight-airport-upper,.flight-airline-upper {
-    margin-bottom: 8px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333333;
-  } 
-  
-  .flight-info {
-    display: flex;
-    transform: translate(12px, -8px)
-  }
+.flight-info-upper,
+.flight-airport-upper,
+.flight-airline-upper {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
 
-  .outbound-flight, .inbound-flight {
-    display: flex;
-    padding-right: 16px;
-    position: relative;
-  }
-  
-  .outbound-flight {
-    // margin-bottom: 16px;
-  }
-  
-  .inbound-flight {
-    display: flex;
-  }
-  
-  .flight-airport-outbound {
-    text-align: right;
-  }
+.flight-info {
+  display: flex;
+  transform: translate(12px, -8px)
+}
 
-  .flight-travel {
-    margin: 0 16px;
-    text-align: center;
-    width: 64px;
-  }
-  
-  .flight-airline {
-    margin-left: 32px;
-    font-size: 12px;
-    line-height: 1.5;
-  }
-  
-  .icon-way {
-    height: 6px;
-    width: 64px;
-    position: absolute;
-    top: 24px;
-  }
-  
-  .check-icon-bags {
-    width: 12px;
-  }
-  
-  .airline-logo {
-    height: 16px;
-    width: 16px;
-    background-color: #333333;
-    display: inline-block;
-    vertical-align: text-top;
-  }
-  .stop-wrapper {
-    width: 64px;
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-  }
-  .stop-item {
-    padding: 0 4px;
-    background: #ffffff;
-    text-align: center;
-  }
+.outbound-flight,
+.inbound-flight {
+  display: flex;
+  padding-right: 16px;
+  position: relative;
+}
 
-  .flight-price {
-    width: 30%;
-    padding-left: 16px;
-    background-image: linear-gradient(#c1c1c1 33%, rgba(255,255,255,0) 0);
-    background-position: left;
-    background-size: 1px 8px;
-    background-repeat: repeat-y;
-    flex: auto;
-  }
-  
-  .price-label {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #333333;
-  }
-  .price-label-grey {
-    color: #666666;
-    font-weight: normal;
-  }
-  .flight-price-total {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 1.333333;
-    color: #ff8c00;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .select-flight-button {
-    font-size: 16px;
-    color: #ffffff;
-    width: 100%;
-    background: #ff8c00;
-    padding: 8px;
-    border-radius: 3px;
-    border: none;
-  }
+.outbound-flight {
+  // margin-bottom: 16px;
+}
 
+.inbound-flight {
+  display: flex;
+}
 
+.flight-airport-outbound {
+  text-align: right;
+}
 
+.flight-travel {
+  margin: 0 16px;
+  text-align: center;
+  width: 64px;
+}
 
+.flight-airline {
+  margin-left: 32px;
+  font-size: 12px;
+  line-height: 1.5;
+}
 
+.icon-way {
+  height: 6px;
+  width: 64px;
+  position: absolute;
+  top: 24px;
+}
 
+.check-icon-bags {
+  width: 12px;
+}
 
+.airline-logo {
+  height: 16px;
+  width: 16px;
+  background-color: #333333;
+  display: inline-block;
+  vertical-align: text-top;
+}
 
+.stop-wrapper {
+  width: 64px;
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+}
 
+.stop-item {
+  padding: 0 4px;
+  background: #ffffff;
+  text-align: center;
+}
 
+.flight-price {
+  width: 30%;
+  padding-left: 16px;
+  background-image: linear-gradient(#c1c1c1 33%, rgba(255, 255, 255, 0) 0);
+  background-position: left;
+  background-size: 1px 8px;
+  background-repeat: repeat-y;
+  flex: auto;
+}
+
+.price-label {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+.price-label-grey {
+  color: #666666;
+  font-weight: normal;
+}
+
+.flight-price-total {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.333333;
+  color: #ff8c00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.select-flight-button {
+  font-size: 16px;
+  color: #ffffff;
+  width: 100%;
+  background: #ff8c00;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+}

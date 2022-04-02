@@ -32,6 +32,7 @@
 <mat-grid-list cols=1 rowHeight="200" gutterSize="0">
     <mat-grid-tile>
     </mat-grid-tile>
+
     <mat-grid-tile *ngFor="let f of flightData; let i = index">
         <div class="flight-card-test">
             <div class="flight-info">
@@ -41,7 +42,6 @@
                             <!-- <span class="bold">LGW</span> -->
                             {{f.timeForm}}
                         </p>
-                        <!-- <p>London Gatwick</p> -->
                     </div>
 
                     <div class="flight-travel flight-info">
@@ -60,33 +60,23 @@
                             style="font-size: 20px;font-weight: bold;color: black;width: max-content;transform: translate(-75px, 10px)">{{f.price}}
                             <label
                                 style="color: rgb(173, 173, 173);font-weight: 400;font-size: 13px;">{{f.trip}}</label></span>
-                        <!-- <span style="font-size: 12px;">Round Trip</span><br> -->
 
                     </div>
 
                     <div class="flight-airport flight-info flight-airport-inbound">
                         <p class="flight-airport-upper">
                             {{f.timeTo}}
-                            <!-- <span class="bold">AGP</span> -->
                         </p>
-                        <!-- <p>Malaga</p> -->
                     </div>
 
                     <div class="flight-airline flight-info">
                         <p class="flight-airline-upper">
 
-                            <!-- <span class="airline-logo"></span> 
-                            <span class="">Easyjet</span> -->
+
                             <img style="transform: translate(-3px, -2px);" src="{{ f.airline }}" />
                         </p>
                         <p style="transform: translate(-1px, -12px);">
-                            <!-- <svg class="check-icon-bags" viewBox="0 0 38 32">
-                                <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
-                                    stroke-linecap="square" stroke-linejoin="miter"
-                                    style="stroke: var(--color1, #1ca381)" d="M6.4 17.681l7.476 7.919 18.124-19.2">
-                                </path>
-                            </svg>
-                            <span class="">{{f.airlineName}}</span><br> -->
+
                             <svg class="check-icon-bags" viewBox="0 0 38 32">
                                 <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
                                     stroke-linecap="square" stroke-linejoin="miter"
@@ -101,14 +91,9 @@
                                 </path>
                             </svg>
                             <span class="">{{f.flightClass}}</span><br>
-                            <button class="fly" (click)="Gotoflightdetail()">Fly</button>
-                            <!-- <svg class="check-icon-bags" viewBox="0 0 38 32">
-                                <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
-                                    stroke-linecap="square" stroke-linejoin="miter"
-                                    style="stroke: var(--color1, #1ca381)" d="M6.4 17.681l7.476 7.919 18.124-19.2">
-                                </path>
-                            </svg>
-                            <span class="">Business Class</span>  -->
+                            <span> <button class="fly" (click)="Gotoflightdetail()">Fly</button>
+                            </span>
+
 
                         </p>
                     </div>
@@ -126,67 +111,6 @@
     <mat-grid-tile></mat-grid-tile>
 
 </mat-grid-list>
-<!-- <button class="fly" (click)="Gotoflightdetail()">Fly</button> -->
 
 <div>
     <!-- <button class="fly" (click)="Gotoflightdetail()">Fly</button> -->
-
-    <!-- <div style="float: left;">left</div>
-    <div style="float: right;">right</div>
-</div> -->
-    <!-- <div class="flight-price flight-info">
-    <p class="price-label">Return flight<br/>
-      <span class="price-label-grey">Per person</span>
-    </p>
-    <span class="flight-price-total">£384</span>
-    <p class="price-label">Hotel + flights: <span class="flight-price-total"></span>£634</p>
-    <button class="select-flight-button">Select</button>
-  </div> -->
-
-    <!-- 
-                <div class="inbound-flight">
-                    <div class="flight-airport flight-info flight-airport-outbound">
-                        <p class="flight-info-upper">
-                            <span class="bold">LGW</span>
-                            18:30
-                        </p>
-                        <p>London Gatwick</p>
-                    </div>
-
-                    <div class="flight-travel flight-info">
-                        <p class="flight-info-upper">2h00</p>
-
-                        <div class="stop-wrapper"><span class="stop-item">1</span></div>
-
-                        <svg class="icon-way" viewBox="0 0 341 32">
-                            <path fill="#ff8c00" style="fill: var(--color1, #ff8c00)"
-                                d="M325.333 0c-7.872 0-14.384 5.696-15.717 13.189h-277.899c-1.333-7.493-7.845-13.189-15.717-13.189-8.837 0-16 7.163-16 16s7.163 16 16 16c7.872 0 14.384-5.696 15.717-13.189h277.899c1.333 7.493 7.845 13.189 15.717 13.189 8.837 0 16-7.163 16-16s-7.163-16-16-16z">
-                            </path>
-                        </svg>
-
-                        <p>Stop</p>
-                    </div>
-
-                    <div class="flight-airport flight-info flight-airport-inbound">
-                        <p class="flight-airport-upper">
-                            21:00
-                            <span class="bold">AGP</span>
-                        </p>
-                        <p>Malaga</p>
-                    </div>
-
-                    <div class="flight-airline flight-info">
-                        <p class="flight-airline-upper">
-                            <span class="airline-logo"></span> <span class="">Easyjet</span>
-                        </p>
-                        <p>
-                            <svg class="check-icon-bags" viewBox="0 0 38 32">
-                                <path fill="none" stroke="#1ca381" stroke-width="6.4" stroke-miterlimit="4"
-                                    stroke-linecap="square" stroke-linejoin="miter"
-                                    style="stroke: var(--color1, #1ca381)" d="M6.4 17.681l7.476 7.919 18.124-19.2">
-                                </path>
-                            </svg>
-                            <span class="">Cabin bag included</span>
-                        </p>
-                    </div>
-                </div> -->
