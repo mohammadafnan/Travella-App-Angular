@@ -82,6 +82,7 @@ input {
     /* Firefox 3.5 - 3.6 */
     box-shadow        : 2px 2px 4px 5px #ccc;
     /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    border-bottom-left-radius: 0px;
 
     button {
         display         : flex;
